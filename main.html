@@ -7,10 +7,10 @@
 </head>
 
 <body>
-	<form>
+	<form method="post" id="form" name="form" >
 		<div>
 			<label for="name">Name*</label>
-			<input type="text" id="name" name="name" placeholder="Name"><br>
+			<input type="text" id="name" name="name" placeholder="Name" required><br>
 			<br>
 		</div>
 		<div>
@@ -49,14 +49,14 @@
 			<br>
 		</div>
 		<div>
-			<label for="Ph number">Phone Number</label>
-			<input type="tel" name="Ph number" id="Ph number" placeholder="xxx-xxx-xxxx">
+			<label for="Phone">Phone Number</label>
+			<input type="tel" name="Phone" id="Phone"  pattern=”[0-9]{3}-[0-9]{3}-[0-9]{4}” placeholder="xxx-xxx-xxxx"  required>
 			<br>
 			<br>
 		</div>
 		<div>
-			<label for="pass" >Password*</label>
-			<input type="password" id="pass" name="pass" placeholder="Password">	
+			<label for="password" >Password*</label>
+			<input type="password" id="password" name="password" placeholder="Password">	
 			<br>
 			<br>
 		</div>
