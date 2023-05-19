@@ -7,7 +7,7 @@
 </head>
 
 <body>
-	<form method="post" id="form" name="form" >
+	<form method="POST" >
 		<div>
 			<label for="name">Name*</label>
 			<input type="text" id="name" name="name" placeholder="Name" required><br>
@@ -15,21 +15,20 @@
 		</div>
 		<div>
 			<label for="email">Email*</label>
-			<input type="email" id="r=email" name="email" placeholder="Email"><br>
+			<input type="email" id="r=email" name="email" placeholder="Email" required><br>
 			<br>
 		</div>
 		<div>
-			<label for="gender">gender*</label>
-			<input type="radio" name="gender" id="gender" value="gender">Male
-			<input type="radio" name="gender" id="gender" value="gender">Female
-			<br> <br>
-			
-			
-		</div>
+             <label>Gender*</label>
+             <input type="radio" id="gender_m" name="gender" value="male" required>
+             <label for="gender_m">Male</label>
+             <input type="radio" id="gender_f" name="gender" value="female" required>
+            <label for="gender_f">Female</label>
+        </div>
 		<div>
-			<label for="Car">Car Brands</label>
-			<select name="topics" id="car">
-            <option value="select the cars" disabled>Please choose an option</option> 
+			<label for="cars">Car Brands*</label>
+           <select id="cars" name="carbrands" required>
+                  <option value="">--Please choose an option--</option>
                   <option value="BMW">BMW</option>
                   <option value="Audi">Audi</option>
                   <option value="Mercedez">Mercedez</option>
@@ -49,33 +48,28 @@
 			<br>
 		</div>
 		<div>
-			<label for="Phone">Phone Number</label>
-			<input type="tel" name="Phone" id="Phone"  pattern=”[0-9]{3}-[0-9]{3}-[0-9]{4}” placeholder="xxx-xxx-xxxx"  required>
+			<label for="tel">Phone Number</label>
+			<input type="tel" name="tel" id="tel"  pattern=”[0-9]{3}-[0-9]{3}-[0-9]{4}” placeholder="xxx-xxx-xxxx"  required>
 			<br>
 			<br>
 		</div>
 		<div>
 			<label for="password" >Password*</label>
-			<input type="password" id="password" name="password" placeholder="Password">	
+			<input type="password" id="password" name="password" placeholder="Password" required>	
 			<br>
 			<br>
 		</div>
 		<div>
-			 I agree to the TOS*<input type="checkbox">
+			  <input type="checkbox" id="tos" name="tos" required>
+              <label for="tos">I agree to the TOS</label>
 			<br>
 			<br>
 			
 		</div>
 		 <div>
-			 <nr></nr>
-            <input type="Submit">
+			  <button type="submit">Submit</button>
         </div>
-		<div>
-			<br>
-		 I agree to the TOS <input type="checkbox">
-			
-		</div>
-	</form>
+		
 
 
 </body>
